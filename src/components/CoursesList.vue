@@ -11,9 +11,20 @@
         @click="selectCourse = c"
       >
         <!--添加批量价格更新-->
-        {{ c.name }} - {{ c.price | currency() }}
+        <!-- {{ c.name }} - {{ c.price | currency() }} -->
+
+        <!-- 嵌套路由 -->
+        <!-- <router-link :to="`/about/${c.name}`">
+          {{ c.name }} - {{ c.price | currency('￥') }}
+        </router-link> -->
+
+        <!-- 编程导航 -->
+        <!-- <div @click="selectedCourse = c;$router.push(`/about/${c.name}`)">
+          {{ c.name }} - {{ c.price | currency('￥') }}
+        </div> -->
       </li>
     </ul>
+    <router-view></router-view>
   </div>
 </template>
 
