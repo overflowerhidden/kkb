@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <img
+    <!-- <img
       alt="Vue logo"
       src="./assets/logo.png"
-    >
+    > -->
     <!-- 插槽实现内容分发 -->
     <message
       :show.sync="show"
